@@ -1,0 +1,322 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+  background-image: url(/assets/images/Work-Background-Image.png);
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-size: cover; /* Ensure the background image covers the entire page */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+/* Navbar styles */
+.navbar {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px; /* Ensure consistent padding */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font: normal normal 300 24px/48px "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding-left: 30%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  padding: 8px 16px; /* Ensure consistent padding */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  transition: color 0.3s ease;
+  padding: 8px 16px; /* Ensure consistent padding */
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle-icon {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #141414;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  height: calc(100% - 60px);
+  padding-top: 20px;
+  z-index: 999;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark overlay to darken the background image */
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure it stays behind other content */
+}
+
+h1 {
+  font: normal normal 200 40px/60px Oswald;
+  border-bottom: 1px solid #ffffff; /* Thinner underline */
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: 10px; /* Add margin bottom to separate the heading and paragraph */
+}
+
+.section-header p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  white-space: normal;
+  text-align: left; /* Align paragraph to left */
+  padding-top: 1%;
+}
+
+.title-container {
+  display: inline-block;
+}
+
+.title-container h1 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.title-container a {
+  display: inline-block;
+  margin-left: 10px; /* Adjust as needed */
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 10%;
+}
+
+.section-header {
+  text-align: left; /* Align section header to left */
+  margin-bottom: 20px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Align content to left */
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: black;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  width: calc(50% - 20px); /* Each card takes up 50% of the container */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  transition: filter 0.3s ease;
+}
+
+.card:hover {
+  background-color: #000; /* Change background to black on hover */
+}
+
+.card:hover img {
+  filter: blur(4px); /* Blur image on hover */
+}
+
+.card:hover::after {
+  opacity: 1; /* Fully visible on hover */
+}
+
+.card .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card .card-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none; /* Hide content by default */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left; /* Align content to the left */
+}
+
+.card .card-content h2 {
+  font: normal normal bold 24px/36px Oswald;
+  margin-bottom: 10px;
+}
+
+.card .card-content ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.card .card-content ul li {
+  margin-bottom: 10px;
+}
+
+.card .card-content a.btn {
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 60px;
+  border: 1px solid #ffffff;
+}
+
+.card:hover .card-content {
+  display: block; /* Show content on hover */
+}
+
+.card.active {
+  background-color: #000; /* Fully black background */
+}
+
+@media (max-width: 1250px) {
+  .nav-menu {
+    display: none;
+  }
+  .container {
+    padding-top: 20%;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%; /* Adjust container width for smaller screens */
+  }
+}
+
+/* Left align on full-screen */
+@media (min-width: 1200px) {
+  .section-content {
+    align-items: flex-start; /* Align content to the start */
+    text-align: left; /* Left align the text */
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 90%; /* Adjust container width for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-content {
+    align-items: flex-start; /* Align content to the start */
+  }
+
+  .section-header p {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .section-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-header p {
+    font-size: 0.875rem;
+  }
+
+  .card {
+    width: calc(100% - 20px);
+  }
+}
