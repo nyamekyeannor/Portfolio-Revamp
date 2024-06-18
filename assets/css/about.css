@@ -1,0 +1,261 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+/* Navbar styles */
+.navbar {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px; /* Ensure consistent padding */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font: normal normal 300 24px/48px "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding-left: 30%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  padding: 8px 16px; /* Ensure consistent padding */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  transition: color 0.3s ease;
+  padding: 8px 16px; /* Ensure consistent padding */
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle-icon {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #141414;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  height: calc(100% - 60px);
+  padding-top: 20px;
+  z-index: 999;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* .mobile-nav-link:hover {
+      background-color: #3fc6fc;
+    } */
+
+/* Jumbotron styles */
+.jumbotron {
+  background-image: url("/assets/images/aboutJumbotronImg.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 200px 50px;
+  text-align: left;
+}
+
+.jumbotron-content {
+  max-width: 800px;
+}
+
+.jumbotron h1 {
+  font: normal normal 300 30px/60px Oswald;
+  margin-bottom: 10px;
+}
+
+.jumbotron h2 {
+  font: normal normal 300 90px/60px Oswald;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font: normal normal 300 13px/15px Helvetica;
+  padding-top: 1%;
+}
+
+/* Content section styles */
+
+.black-section p:nth-of-type(1) strong {
+  font: oblique normal bold 16px/35px Helvetica;
+}
+
+.black-section p:nth-of-type(1) span {
+  font: normal normal 300 16px/35px Helvetica;
+}
+
+.black-section p:nth-of-type(2) {
+  font: normal normal 300 16px/35px Helvetica;
+}
+
+.black-section p:nth-of-type(3) {
+  font: normal normal 300 16px/35px Helvetica;
+}
+
+.content {
+  padding: 20px 50px;
+}
+
+.black-section {
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.black-section p {
+  font: normal normal 300 18px/24px "Helvetica", sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Fun Facts section styles */
+.fun-facts {
+  text-align: left;
+  font: normal normal 300 45px/60px Oswald;
+  margin-bottom: 20px;
+}
+
+.fun-facts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fun-fact {
+  text-align: center;
+  flex-basis: calc(25% - 20px);
+  padding: 20px;
+}
+
+.fun-fact img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.fun-fact p {
+  font: normal normal 300 16px/25px Helvetica;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1450px) {
+  .jumbotron {
+    background-image: url("/assets/images/aboutJumbotronImg.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 300px 50px;
+    text-align: left;
+  }
+}
+@media (max-width: 1250px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+
+  .jumbotron {
+    background-image: url("/assets/images/About-jumbotron-Image-Mobile.png");
+    padding: 190px 20px;
+    text-align: left;
+  }
+
+  .jumbotron-content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 40%;
+  }
+
+  .jumbotron h1 {
+    font: normal normal 300 30px/60px Oswald;
+  }
+
+  .jumbotron h2 {
+    font: normal normal 300 90px/60px Oswald;
+  }
+
+  .jumbotron p {
+    font: normal normal 300 13px/15px Helvetica;
+    padding-top: 5%;
+  }
+
+  .black-section p {
+    font-size: 16px;
+  }
+
+  .fun-facts {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .fun-fact {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .jumbotron-content {
+    padding-left: 10px;
+  }
+
+  .fun-fact img {
+    align-items: center;
+  }
+}
