@@ -1,0 +1,264 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+/* Navbar styles */
+.navbar {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px; /* Ensure consistent padding */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font: normal normal 300 24px/48px "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding-left: 30%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  padding: 8px 16px; /* Ensure consistent padding */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  transition: color 0.3s ease;
+  padding: 8px 16px; /* Ensure consistent padding */
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle-icon {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #141414;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  height: calc(100% - 60px);
+  padding-top: 20px;
+  z-index: 999;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Background Container Styles */
+.background-container {
+  background-image: url("/assets/images/Home-backgroung-Image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.responsive-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 262px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 50%;
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.main-heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  margin-bottom: 0;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.main-heading span:first-child {
+  flex: 1;
+}
+
+.sub-heading {
+  font: normal normal 200 40px/60px Oswald;
+  font-size: 40px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  white-space: nowrap;
+  max-width: 100%;
+  font-weight: 300;
+  padding-right: 19%;
+  margin-bottom: -3%; /* Reduce the space below the quote */
+}
+
+.author {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 14px;
+  padding: 0;
+}
+
+.oval-button {
+  width: 138px;
+  height: 42px;
+  border: 1px solid #fff;
+  border-radius: 60px;
+  background-color: transparent;
+  color: #fff;
+  margin-top: 20%;
+  margin-right: 70%;
+  cursor: pointer;
+}
+
+.oval-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 1250px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    align-items: center;
+    margin-top: -30px;
+  }
+
+  .responsive-image {
+    max-width: 80%;
+    width: auto;
+    margin-bottom: 10%;
+  }
+
+  .sub-heading {
+    margin-top: -10px;
+    padding-right: 3%;
+  }
+
+  .author {
+    padding-right: 10%;
+  }
+
+  .oval-button {
+    margin-left: 70%;
+    margin: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 40px;
+  }
+
+  .sub-heading {
+    font-size: 30px;
+    margin-top: -20px;
+    padding-right: 3%;
+  }
+
+  .quote {
+    font-size: 14px;
+    margin-top: -15px;
+  }
+}
