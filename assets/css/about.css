@@ -21,6 +21,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  top: 0;
+  transform: top 0.3s easy;
 }
 
 .nav-logo {
@@ -88,10 +90,6 @@ body {
   padding: 10px 20px;
   transition: background-color 0.3s ease;
 }
-
-/* .mobile-nav-link:hover {
-      background-color: #3fc6fc;
-    } */
 
 /* Jumbotron styles */
 .jumbotron {
@@ -255,7 +253,16 @@ body {
     padding-left: 10px;
   }
 
+  .fun-fact {
+    flex-basis: 100%;
+  }
   .fun-fact img {
-    align-items: center;
+    width: 150px; /* Adjusts the image size for small screens */
+    height: 150px;
+    margin-bottom: 5px; /* Adjusts the margin for small screens */
+  }
+  .fun-fact p {
+    text-align: center;
+    font-size: 14px; /* Adjusts the text size for small screens */
   }
 }
