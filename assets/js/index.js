@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.style.top = "-60px"; // Adjust this value based on your navbar height
     } else {
       // Scroll Up
-      navbar.style.top = "0";
+      if (scrollTop <= 0) {
+        navbar.style.top = "0";
+      } else {
+        navbar.style.top = "-60px"; // Keep it hidden when scrolling up but not at the top
+      }
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
   });
