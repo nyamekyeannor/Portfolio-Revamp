@@ -100,11 +100,13 @@ body {
   color: white;
   padding: 200px 50px;
   text-align: left;
-  padding-top: 20%;
+  position: relative; /* Ensures absolute positioning within */
 }
 
 .jumbotron-content {
   max-width: 800px;
+  position: relative; /* Keeps the content relative for absolute child */
+  top: 90px; /* Moves content down */
 }
 
 .jumbotron h1 {
@@ -122,7 +124,6 @@ body {
 
 .jumbotron p {
   font: normal normal 300 20px/15px Helvetica;
-  /* font-weight: 200; */
   padding-top: 1%;
 }
 
@@ -255,10 +256,21 @@ body {
   .jumbotron h2 {
     /* font: normal normal 300 90px/60px Oswald; */
   }
+  .jumbotron h1 {
+    font: normal normal 300 30px/60px Oswald;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .jumbotron h2 {
+    font: normal normal 300 80px/60px Oswald;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 
   .jumbotron p {
-    font: normal normal 300 17px/15px Helvetica;
-    padding-top: 5%;
+    font: normal normal 300 15px/15px Helvetica;
   }
 
   .black-section p {
