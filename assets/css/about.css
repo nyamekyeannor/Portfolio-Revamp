@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
   background-color: #141414;
+  /* background-image: url(/assets/images/About\ Background.png); */
   color: white;
 }
 
@@ -93,12 +94,13 @@ body {
 
 /* Jumbotron styles */
 .jumbotron {
-  background-image: url("/assets/images/aboutJumbotronImg.png");
+  background-image: url("/assets/images/AboutJumbotronImg.png");
   background-size: cover;
   background-position: center;
   color: white;
   padding: 200px 50px;
   text-align: left;
+  padding-top: 20%;
 }
 
 .jumbotron-content {
@@ -108,16 +110,19 @@ body {
 .jumbotron h1 {
   font: normal normal 300 30px/60px Oswald;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .jumbotron h2 {
   font: normal normal 300 90px/60px Oswald;
+  font-weight: bolder;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
 .jumbotron p {
-  font: normal normal 300 13px/15px Helvetica;
+  font: normal normal 300 20px/15px Helvetica;
+  /* font-weight: 200; */
   padding-top: 1%;
 }
 
@@ -141,6 +146,11 @@ body {
 
 .content {
   padding: 20px 50px;
+  background-image: url("/assets/images/About\ Background.png");
+  background-repeat: no-repeat; /* Ensures the background image does not repeat */
+  background-size: cover; /* Scales the background image to cover the entire element */
+  background-position: center; /* Centers the background image */
+  color: white;
 }
 
 .black-section {
@@ -155,10 +165,23 @@ body {
 }
 
 /* Fun Facts section styles */
+
 .fun-facts {
   text-align: left;
   font: normal normal 300 45px/60px Oswald;
   margin-bottom: 20px;
+  padding-top: 5%;
+  padding-left: 2%;
+  position: relative;
+  display: inline-block;
+}
+
+.fun-facts::after {
+  content: "";
+  display: block;
+  width: 100%; /* Ensures the line is as long as the text */
+  border-bottom: 1px solid white; /* Adjust the color and thickness as needed */
+  margin-top: 5px; /* Adjust the spacing between text and line */
 }
 
 .fun-facts-container {
@@ -171,22 +194,26 @@ body {
   text-align: center;
   flex-basis: calc(25% - 20px);
   padding: 20px;
+  padding-top: 3%;
 }
 
 .fun-fact img {
   width: 200px;
   height: 200px;
   margin-bottom: 10px;
+  border-radius: 50%; /* Makes the image circular */
+  border: 2px solid #fff;
 }
 
 .fun-fact p {
   font: normal normal 300 16px/25px Helvetica;
+  padding-top: 5%;
 }
 
 /* Responsive adjustments */
 @media (min-width: 1450px) {
   .jumbotron {
-    background-image: url("/assets/images/aboutJumbotronImg.png");
+    background-image: url("/assets/images/AboutJumbotronImg.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -208,7 +235,7 @@ body {
   }
 
   .jumbotron {
-    background-image: url("/assets/images/About-jumbotron-Image-Mobile.png");
+    background-image: url("/assets/images/AboutJumbotronImg.png");
     padding: 190px 20px;
     text-align: left;
   }
@@ -218,19 +245,19 @@ body {
     margin: 0 auto;
     text-align: left;
     padding-left: 20px;
-    padding-top: 40%;
+    padding-top: 0%;
   }
 
   .jumbotron h1 {
-    font: normal normal 300 30px/60px Oswald;
+    /* font: normal normal 300 30px/60px Oswald; */
   }
 
   .jumbotron h2 {
-    font: normal normal 300 90px/60px Oswald;
+    /* font: normal normal 300 90px/60px Oswald; */
   }
 
   .jumbotron p {
-    font: normal normal 300 13px/15px Helvetica;
+    font: normal normal 300 17px/15px Helvetica;
     padding-top: 5%;
   }
 
