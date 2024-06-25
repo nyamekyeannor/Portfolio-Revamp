@@ -8,7 +8,6 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
   background-color: #141414;
-  /* background-image: url(/assets/images/About\ Background.png); */
   color: white;
 }
 
@@ -18,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px; /* Ensure consistent padding */
+  padding: 8px 16px;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -36,7 +35,7 @@ body {
 .nav-menu {
   display: flex;
   gap: 30px;
-  padding: 8px 16px; /* Ensure consistent padding */
+  padding: 8px 16px;
 }
 
 .nav-link {
@@ -44,7 +43,7 @@ body {
   text-decoration: none;
   font: normal normal 400 18px/24px "Roboto", sans-serif;
   transition: color 0.3s ease;
-  padding: 8px 16px; /* Ensure consistent padding */
+  padding: 8px 16px;
 }
 
 .nav-link:hover {
@@ -100,13 +99,13 @@ body {
   color: white;
   padding: 200px 50px;
   text-align: left;
-  position: relative; /* Ensures absolute positioning within */
+  position: relative;
 }
 
 .jumbotron-content {
   max-width: 800px;
-  position: relative; /* Keeps the content relative for absolute child */
-  top: 90px; /* Moves content down */
+  position: relative;
+  top: 90px;
 }
 
 .jumbotron h1 {
@@ -148,9 +147,9 @@ body {
 .content {
   padding: 20px 50px;
   background-image: url("/assets/images/About\ Background.png");
-  background-repeat: no-repeat; /* Ensures the background image does not repeat */
-  background-size: cover; /* Scales the background image to cover the entire element */
-  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 
@@ -180,9 +179,9 @@ body {
 .fun-facts::after {
   content: "";
   display: block;
-  width: 100%; /* Ensures the line is as long as the text */
-  border-bottom: 1px solid white; /* Adjust the color and thickness as needed */
-  margin-top: 5px; /* Adjust the spacing between text and line */
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-top: 5px;
 }
 
 .fun-facts-container {
@@ -202,7 +201,7 @@ body {
   width: 200px;
   height: 200px;
   margin-bottom: 10px;
-  border-radius: 50%; /* Makes the image circular */
+  border-radius: 50%;
   border: 2px solid #fff;
 }
 
@@ -250,13 +249,6 @@ body {
   }
 
   .jumbotron h1 {
-    /* font: normal normal 300 30px/60px Oswald; */
-  }
-
-  .jumbotron h2 {
-    /* font: normal normal 300 90px/60px Oswald; */
-  }
-  .jumbotron h1 {
     font: normal normal 300 30px/60px Oswald;
     margin-bottom: 10px;
     font-weight: bold;
@@ -296,12 +288,12 @@ body {
     flex-basis: 100%;
   }
   .fun-fact img {
-    width: 150px; /* Adjusts the image size for small screens */
+    width: 150px;
     height: 150px;
-    margin-bottom: 5px; /* Adjusts the margin for small screens */
+    margin-bottom: 5px;
   }
   .fun-fact p {
     text-align: center;
-    font-size: 14px; /* Adjusts the text size for small screens */
+    font-size: 14px;
   }
 }

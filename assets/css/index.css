@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px; /* Ensure consistent padding */
+  padding: 8px 16px;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -33,7 +33,7 @@ body {
 .nav-menu {
   display: flex;
   gap: 30px;
-  padding: 8px 16px; /* Ensure consistent padding */
+  padding: 8px 16px;
 }
 
 .nav-link {
@@ -41,7 +41,7 @@ body {
   text-decoration: none;
   font: normal normal 400 18px/24px "Roboto", sans-serif;
   transition: color 0.3s ease;
-  padding: 8px 16px; /* Ensure consistent padding */
+  padding: 8px 16px;
 }
 
 .nav-link:hover {
@@ -170,7 +170,7 @@ body {
   max-width: 100%;
   font-weight: 300;
   padding-right: 19%;
-  margin-bottom: -3%; /* Reduce the space below the quote */
+  margin-bottom: -3%;
 }
 
 .author {
