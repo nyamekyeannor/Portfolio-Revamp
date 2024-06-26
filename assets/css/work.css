@@ -217,6 +217,7 @@ h1 {
   padding: 20px;
   box-sizing: border-box;
   text-align: left;
+  overflow-y: auto; /* Ensure content can scroll if it overflows */
 }
 
 .card .card-content h2 {
@@ -258,11 +259,9 @@ h1 {
   .container {
     padding-top: 20%;
   }
-
   .nav-toggle {
     display: flex;
   }
-
   .mobile-menu.active {
     display: flex;
   }
@@ -292,15 +291,12 @@ h1 {
   .section-header h1 {
     font-size: 2rem;
   }
-
   .section-content {
     align-items: flex-start;
   }
-
   .section-header p {
     font-size: 1rem;
   }
-
   .card {
     width: calc(50% - 20px);
   }
@@ -310,12 +306,13 @@ h1 {
   .section-header h1 {
     font-size: 1.5rem;
   }
-
   .section-header p {
     font-size: 0.875rem;
   }
-
   .card {
     width: calc(100% - 20px);
+  }
+  .card .card-content {
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 }
