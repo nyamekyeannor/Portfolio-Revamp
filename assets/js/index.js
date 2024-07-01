@@ -24,3 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("active");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all card elements
+  const cards = document.querySelectorAll(".card");
+
+  // Loop through each card and add a click event listener
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      // Toggle a class to show/hide the card content
+      this.classList.toggle("active");
+    });
+  });
+});
