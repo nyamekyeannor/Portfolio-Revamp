@@ -59,6 +59,7 @@ body {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  padding-right: 5%;
 }
 
 .nav-toggle-icon {
