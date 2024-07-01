@@ -7,10 +7,16 @@
 
 body {
   font-family: "Roboto", Arial, sans-serif;
-  background-image: url(/assets/images/Work-Background-Image.png);
-  background-color: #141414;
+  /* background-image: url(/assets/images/Work-Background-Image.png); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/images/Work-Background-Image.png"); /* Adjust path as needed */
+
+  background-color: black;
   color: white;
   padding: 20px;
+  background-size: cover; /* Ensure the background image covers the entire body */
+  background-size: cover; /* Ensure the background image covers the entire body */
+  background-position: center; /* Center the background image */
 }
 
 /* Navbar styles */
@@ -42,7 +48,7 @@ body {
   color: white;
   text-decoration: none;
   font: normal normal 400 18px/24px "Roboto", sans-serif;
-  transition: color 0.3s ease;
+  transition: none;
   padding: 8px 16px;
 }
 
@@ -53,16 +59,13 @@ body {
   margin-right: 20px;
   padding: 8px 16px;
   border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  padding-right: 20px; /* Adjust as needed */
 }
-
 .nav-toggle-icon {
   width: 25px;
   height: 3px;
