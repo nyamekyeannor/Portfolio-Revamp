@@ -40,7 +40,7 @@ body {
   color: white;
   text-decoration: none;
   font: normal normal 400 18px/24px "Roboto", sans-serif;
-  transition: color 0.3s ease;
+  transition: none;
   padding: 8px 16px;
 }
 
@@ -51,7 +51,6 @@ body {
   margin-right: 20px;
   padding: 8px 16px;
   border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-toggle {
