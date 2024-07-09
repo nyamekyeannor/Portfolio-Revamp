@@ -7,16 +7,13 @@
 
 body {
   font-family: "Roboto", Arial, sans-serif;
-  /* background-image: url(/assets/images/Work-Background-Image.png); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
-    url("/assets/images/Work-Background-Image.png"); /* Adjust path as needed */
-
+    url("/assets/images/Work-Background-Image.png");
   background-color: black;
   color: white;
   padding: 20px;
-  background-size: cover; /* Ensure the background image covers the entire body */
-  background-size: cover; /* Ensure the background image covers the entire body */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
 }
 
 /* Navbar styles */
@@ -35,7 +32,7 @@ body {
   font: normal normal 300 24px/48px "Oswald", sans-serif;
   color: white;
   text-decoration: none;
-  padding-left: 30%;
+  padding-left: 3%;
 }
 
 .nav-menu {
@@ -56,8 +53,6 @@ body {
   background-color: white;
   color: black;
   text-decoration: none;
-  margin-right: 20px;
-  padding: 8px 16px;
   border-radius: 20px;
 }
 
@@ -67,6 +62,7 @@ body {
   cursor: pointer;
   padding-right: 5%;
 }
+
 .nav-toggle-icon {
   width: 25px;
   height: 3px;
@@ -96,30 +92,31 @@ body {
   align-items: center;
 }
 
-/* Mobile Menu Links */
 .mobile-nav-link {
   color: white;
   text-decoration: none;
-  font: normal normal 400 18px/24px "Roboto", sans-serif;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-  margin-bottom: 10px;
-  text-align: center;
+  font: normal normal 400 24px/32px "Roboto", sans-serif;
+  margin-bottom: 24px;
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  padding-top: 10%;
+  max-width: 1200px;
 }
+
+.section-header {
+  text-align: center;
+  padding-top: 15%;
+}
+
 h1 {
   font: normal normal 200 40px / 60px Oswald;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
   opacity: 1;
   margin-bottom: 10px;
-  display: inline-block; /* Ensures the underline is only under the text */
+  display: inline-block;
+  margin-right: 94%;
 }
 
 .section-header p {
@@ -128,35 +125,63 @@ h1 {
   white-space: normal;
   text-align: left;
   padding-top: 1%;
+  line-height: 1.5;
 }
 
 .card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+  gap: 26px;
+  padding: 10% 0;
 }
 
+/* Card Styles */
 .card {
-  background-color: black;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  width: calc(50% - 20px);
   height: 300px;
-  transition: transform 0.3s, background-color 0.3s;
 }
 
-.card:hover {
-  background-color: #333;
-  transform: scale(1.05);
+.card-1 {
+  background-image: url("/assets/images/Stratus.png");
+}
+
+.card-2 {
+  background-image: url("/assets/images/St.Augustine.png");
+}
+
+.card-3 {
+  background-image: url("/assets/images/College\ of\ Eastern\ Idaho.png");
+}
+
+.card-4 {
+  background-image: url("/assets/images/City\ Of\ Vancouver.png");
+}
+
+.card-5 {
+  background-image: url("/assets/images/Left\ Cost\ Wholesale.png");
+}
+
+.card-6 {
+  background-image: url("/assets/images/Collin\ Medical.png");
 }
 
 .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -164,49 +189,71 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
   padding: 20px;
-  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: last baseline;
   text-align: left;
-  overflow-y: auto;
 }
 
 .card:hover .card-content {
-  display: block;
+  opacity: 1;
 }
 
-.card-content h2 {
-  font: normal normal bold 24px/36px "Oswald", sans-serif;
+.card h2 {
   margin-bottom: 10px;
 }
 
-.card-content ul {
-  list-style-type: none;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  margin-bottom: 20px; /* Add space below the list */
-}
-
-.card-content ul li {
+.card ul {
+  list-style: none;
   margin-bottom: 10px;
+  padding-left: 0;
 }
 
+.card ul li {
+  margin-bottom: 10px;
+  font: normal normal 400 14px/16px "Roboto", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font: normal normal 400 14px/16px "Roboto", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
 .card-content a.btn {
-  color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 60px;
   border: 1px solid #ffffff;
-  display: inline-block; /* Ensure the margin works as expected */
+  display: inline-block;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1250px) {
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 2fr;
+  }
   .nav-menu {
     display: none;
   }
@@ -214,26 +261,7 @@ h1 {
   .nav-toggle {
     display: flex;
   }
-  .nav-logo {
-    padding-left: 10px; /* Adjust as needed */
-  }
-  .section-header p {
-    line-height: 30px;
-  }
-
-  .mobile-menu.active {
-    display: flex;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: calc(100% - 20px);
-  }
   .container {
     padding-top: 20%;
-  }
-  .nav-logo {
-    padding-left: 10px; /* Adjust as needed */
   }
 }

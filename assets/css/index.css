@@ -43,12 +43,11 @@ body {
   transition: none;
   padding: 8px 16px;
 }
+
 .nav-link:hover {
   background-color: white;
   color: black;
   text-decoration: none;
-  margin-right: 20px;
-  padding: 8px 16px;
   border-radius: 20px;
 }
 
@@ -83,7 +82,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 1rem;
-  overflow: hidden; /* Ensure pseudo-element fits within */
+  overflow: hidden;
 }
 
 .background-container::before {
@@ -97,13 +96,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.5; /* Set desired opacity */
-  z-index: 1; /* Ensure pseudo-element is behind the text */
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .responsive-section {
   position: relative;
-  z-index: 2; /* Ensure content is above the pseudo-element */
+  z-index: 2;
   display: flex;
   flex-direction: row;
   align-items: center;
