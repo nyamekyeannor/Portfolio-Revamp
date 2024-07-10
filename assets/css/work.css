@@ -264,4 +264,11 @@ h1 {
   .container {
     padding-top: 20%;
   }
+  .card-content a.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 60px;
+    border: 1px solid #ffffff;
+    /* display: inline-block; */
+  }
 }
