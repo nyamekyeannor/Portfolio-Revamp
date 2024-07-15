@@ -199,9 +199,8 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: last baseline; */
-  align-items: first baseline;
-  /* text-align: left; */
+  align-items: last baseline;
+  text-align: left;
 }
 
 .card:hover .card-content {
@@ -244,6 +243,7 @@ h1 {
   border-radius: 60px;
   border: 1px solid #ffffff;
   display: inline-block;
+  margin-right: auto; /* Pushes the button to the right */
 }
 
 @media (max-width: 1024px) {
@@ -265,10 +265,5 @@ h1 {
   }
   .container {
     padding-top: 20%;
-  }
-
-  /* Apply left-align to buttons on mobile */
-  .card-content a.btn {
-    text-align: left;
   }
 }
