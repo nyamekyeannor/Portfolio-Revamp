@@ -115,7 +115,8 @@ h1 {
   opacity: 1;
   margin-bottom: 10px;
   display: inline-block;
-  margin-right: 94%;
+  /* margin-right: 94%; */
+  margin-right: 80%;
 }
 
 .section-header p {
@@ -268,5 +269,12 @@ h1 {
 
   .navbar {
     padding-left: 0;
+  }
+  .nav-logo {
+    padding-left: 0 !important; /* Remove any padding */
+    margin-left: 0 !important; /* Ensure there's no margin */
+  }
+  .navbar {
+    padding-left: 0 !important; /* Ensure the navbar has no left padding */
   }
 }
