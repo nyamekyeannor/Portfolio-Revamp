@@ -32,7 +32,6 @@ body {
   font: normal normal 300 24px/48px "Oswald", sans-serif;
   color: white;
   text-decoration: none;
-  padding-left: 3%;
 }
 
 .nav-menu {
@@ -265,5 +264,9 @@ h1 {
   }
   .container {
     padding-top: 20%;
+  }
+
+  .navbar {
+    padding-left: 0;
   }
 }
