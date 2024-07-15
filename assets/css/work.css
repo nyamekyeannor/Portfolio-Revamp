@@ -130,7 +130,7 @@ h1 {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+  grid-template-columns: repeat(2, 1fr);
   gap: 26px;
   padding: 10% 0;
 }
@@ -243,7 +243,7 @@ h1 {
   border-radius: 60px;
   border: 1px solid #ffffff;
   display: inline-block;
-  margin-right: auto; /* Pushes the button to the right */
+  margin-right: auto;
 }
 
 @media (max-width: 1024px) {
