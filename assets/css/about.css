@@ -140,6 +140,10 @@ body {
   font: normal normal 300 18px/24px "Helvetica", sans-serif;
   margin-bottom: 10px;
 }
+p:nth-of-type(2) {
+  margin-top: 2%; /* Adjust the value as needed */
+  margin-bottom: 2%; /* Adjust the value as needed */
+}
 
 /* Fun Facts section styles */
 
