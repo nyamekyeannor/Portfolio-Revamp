@@ -311,3 +311,60 @@ body {
     font-size: 14px;
   }
 }
+
+/* Styles for the skills section */
+.skills-section {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  color: #333;
+}
+
+.section-title {
+  font: normal normal 300 32px/48px "Oswald", sans-serif;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.skill-icon {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}

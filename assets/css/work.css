@@ -115,7 +115,7 @@ h1 {
   opacity: 1;
   margin-bottom: 10px;
   display: inline-block;
-  /* margin-right: 94%; */
+  margin-right: 94%;
   margin-right: 80%;
 }
 
@@ -199,7 +199,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: last baseline;
+  align-items: flex-start;
   text-align: left;
 }
 
@@ -209,6 +209,7 @@ h1 {
 
 .card h2 {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .card ul {
@@ -254,7 +255,7 @@ h1 {
 
 @media (max-width: 768px) {
   .card-grid {
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
   }
   .nav-menu {
     display: none;
@@ -271,10 +272,10 @@ h1 {
     padding-left: 0;
   }
   .nav-logo {
-    padding-left: 0 !important; /* Remove any padding */
-    margin-left: 0 !important; /* Ensure there's no margin */
+    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
   .navbar {
-    padding-left: 0 !important; /* Ensure the navbar has no left padding */
+    padding-left: 0 !important;
   }
 }
