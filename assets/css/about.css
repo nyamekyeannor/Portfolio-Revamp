@@ -95,7 +95,7 @@ body {
   font: normal normal 300 90px/60px Oswald;
   font-weight: bolder;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .jumbotron p {
@@ -141,8 +141,8 @@ body {
   margin-bottom: 10px;
 }
 p:nth-of-type(2) {
-  margin-top: 2%; /* Adjust the value as needed */
-  margin-bottom: 2%; /* Adjust the value as needed */
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 /* Fun Facts section styles */
@@ -152,7 +152,7 @@ p:nth-of-type(2) {
   font: normal normal 300 45px/60px Oswald;
   margin-bottom: 20px;
   padding-top: 3%;
-  padding-left: 2%;
+  padding-left: 4%;
   position: relative;
   display: inline-block;
 }
@@ -217,6 +217,44 @@ p:nth-of-type(2) {
   transition: background-color 0.3s ease;
   margin-bottom: 10px;
   text-align: center;
+}
+
+/* Styles for the skills section */
+.skills-section {
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  color: #333;
+}
+
+.section-title {
+  font: normal normal 300 32px/48px "Oswald", sans-serif;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.skill-icon {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font: normal normal 400 18px/24px "Roboto", sans-serif;
+  margin-top: 10px;
 }
 
 /* Responsive adjustments */
@@ -315,45 +353,6 @@ p:nth-of-type(2) {
     font-size: 14px;
   }
 }
-
-/* Styles for the skills section */
-.skills-section {
-  padding: 50px 20px;
-  background-color: #f8f8f8;
-  text-align: center;
-  color: #333;
-}
-
-.section-title {
-  font: normal normal 300 32px/48px "Oswald", sans-serif;
-  margin-bottom: 30px;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.skill {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-}
-
-.skill-icon {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.skill p {
-  font: normal normal 400 18px/24px "Roboto", sans-serif;
-  margin-top: 10px;
-}
-
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .skills-container {
@@ -364,6 +363,10 @@ p:nth-of-type(2) {
 @media (max-width: 768px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  p:nth-of-type(2) {
+    margin-top: 7%;
+    margin-bottom: 7%;
   }
 }
 
