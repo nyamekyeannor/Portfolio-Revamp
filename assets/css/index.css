@@ -113,20 +113,19 @@ body {
 }
 
 .image-container {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20%;
+  padding: 0;
+  width: 100%;
 }
 
 .responsive-image {
-  width: 100%;
-  max-width: 262px;
-  height: auto;
+  width: 262px;
+  height: 262px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 50%;
+  display: block;
 }
 
 .text-container {
@@ -252,8 +251,8 @@ body {
   }
 
   .responsive-image {
-    max-width: 50%;
-    width: auto;
+    width: 262px;
+    height: 262px;
     margin-bottom: 10%;
   }
 
